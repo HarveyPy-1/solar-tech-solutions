@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Panels Quotation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #555;
+    }
+    
+    .quotation {
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Solar Panels Quotation</h1>
+
+  <form id="quotationForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" required>
+    
+    <label for="location">Location:</label>
+    <input type="text" id="location" required>
+    
+    <label for="panels">Number of Panels:</label>
+    <input type="number" id="panels" required>
+    
+    <label for="message">Additional Message:</label>
+    <textarea id="message" rows="4"></textarea>
+    
+    <button type="submit">Get Quotation</button>
+  </form>
+
+  <div id="quotationResult" class="quotation" style="display: none;">
+    <h2>Thank you for your interest!</h2>
+    <p>We will contact you soon with a personalized quotation for solar panels installation in your location.</p>
+  </div>
+
+  <script>
+    const quotationForm = document.getElementById('quotationForm');
+    const quotationResult = document.getElementById('quotationResult');
+
+    quotationForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      // Simulating form submission with a delay
+      setTimeout(function() {
+        // Hide the form
+        quotationForm.style.display = 'none';
+        // Show the quotation result
+        quotationResult.style.display = 'block';
+      }, 2000);
+    });
+  </script>
+</body>
+
+</html>
