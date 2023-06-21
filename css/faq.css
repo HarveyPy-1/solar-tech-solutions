@@ -1,72 +1,86 @@
-* {
+*{
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-.hero-wraper {
-  width: 100vw;
-  }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background:rgba(136, 185, 79, 0.8); */
+}
 
-/* Typograpy */
-.wrapper {
-  font-family: "Roboto", sans-serif;
-  max-width: 50%;
+.accordion {
+  max-width: 75%;
   margin: auto;
 }
 
-.wrapper > h1 {
-  margin: 1.5rem 0;
-  font-weight: 900;
-  text-align: center;
-  letter-spacing: 0.1rem;
-  color: #554e4e;
+.accordion li {
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background:#ffff;
+  box-shadow: 6px 6px 10px -1px rgba(136, 185, 79, 0.8),
+  -6px -6px 10px -1px rgba(136, 185, 79, 0.4);
 }
 
-.cross {
-  background-color: #ffff;
-  color: rgba(136, 185, 79, 0.8);
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 800;
-  width: 100%;
-  padding: 2rem 1.5rem;
-  border: none;
-  transition: .3s;
+.accordion li label{
+display: flex;
+align-items: center;
+padding: 10px;
+font-size: 18px;
+font-weight: 900;
+color: #4d8000;
+cursor: pointer;
+}
+
+label{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
- .cross i {
-color: rgb(250, 176, 69);
-font-size: 1.4rem;
-
- }
-
- .active, .cross:hover {
-    background-color:  rgba(136, 185, 79, 0.5);
-    color: #ffff;
- }
-
-.answer {
-    padding: 0 2rem 2.5rem 2rem;
-    overflow: hidden;
-    background-color:  rgba(136, 185, 79, 0.1);
-    display: none;
 }
 
- .answer p {
-    color: rgba(0, 0, 0, 0.7);
-    font-size: .85rem;
-    line-height: 1.4;
-    margin-bottom: 1.2rem;
- }
+label::after{
+  content: "+";
+  color: #f99406;
+  font-size: 24px;
+  /* font: weight 600; */
+}
 
- .faq {
-    border: 1px solid rgba(136, 185, 79, 0.2);
-    margin: .75rem 0;
- }
+input[type="radio"]{
+  visibility: hidden;
+}
 
- .faq.active {
-    border: none;
- }
+.accordion .content {
+  color: #365a00;
+  padding: 0 10px;
+  line-height: 1.5;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s, padding 0.6s;
+}
+
+.content{
+  background-color: #d7f5aaa8;
+ 
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+max-height: 400px; /*try out on faq.html*/
+padding: 10px 10px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after{
+  content: "-";
+}
+
+p{
+  margin-top: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+p a{
+  text-decoration: none;
+  color: #f99406;
+  font-weight: 600;
+}
