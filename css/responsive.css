@@ -1,0 +1,315 @@
+/* For small desktop screen */
+@media screen and (max-width: 1338px) {
+  .form {
+    width: 50%;
+  }
+}
+
+/* For Tablet */
+@media screen and (max-width: 1024px) {
+  .banner h1 {
+    font-size: 70px; /* Increase the font size of h1 in the banner */
+  }
+
+  nav img,
+  footer img {
+    width: 90px; /* Set the width of images in the nav and footer to 90 pixels */
+  }
+
+  img {
+    width: 100%; /* Make all images stretch to 100% width */
+  }
+
+  .partnars-cards {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Create a grid with two equal-width columns for partnars-cards */
+  }
+
+  .partnars-cards div {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally and vertically in partnars-cards div */
+  }
+
+  .footer-links {
+    width: 100%; /* Set the width of footer-links to 80% */
+  }
+
+  .form {
+    width: 50%; /* Set the width of form to 50% */
+  }
+
+  .additonal-box p {
+    font-size: 15px; /* Set the font size of paragraphs in additonal-box to 15 pixels */
+  }
+
+  .contact-content {
+    gap: 30px; /* Set the gap between elements in contact-content to 30 pixels */
+  }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 750px) {
+  img {
+    width: 100%;
+  }
+
+  body {
+    overflow-x: hidden; /* Hide horizontal scroll on the body */
+  }
+
+  .nav-links {
+    display: none; /* Hide the nav-links */
+  }
+
+  .hamburger {
+    display: block; /* Show the hamburger icon */
+  }
+
+  .hamburger i {
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer; /* Set styles for the hamburger icon */
+  }
+
+  .banner h1 {
+    font-size: 45px; /* Decrease the font size of h1 in the banner */
+    margin-bottom: 30px; /* Add margin at the bottom of h1 in the banner */
+  }
+
+  .btn {
+    padding: 13px 23px;
+    font-size: 13px; /* Adjust padding and font size of buttons */
+  }
+
+  .banner {
+    height: 60svh; /* Set the height of the banner */
+  }
+
+  .section-title {
+    font-size: 26px; /* Set the font size of section titles */
+    margin-bottom: 30px; /* Add margin at the bottom of section titles */
+  }
+
+  .st-contents {
+    flex-direction: column-reverse; /* Reverse the column order in st-contents */
+  }
+
+  .stc_content {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .stc_left,
+  .stc_right {
+    width: 100%; /* Set the width of stc_left and stc_right to 100% */
+    background: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .stc_right {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally and vertically in stc_right */
+  }
+
+  .stc_content img {
+    width: 100%; /* Set the width of images in stc_right to 350 pixels */
+  }
+
+  .stc_left p {
+    font-size: 15px; /* Set the font size of paragraphs in stc_left to 15 pixels */
+  }
+
+  .st-list {
+    margin-top: 30px; /* Add margin at the top of st-list */
+  }
+
+  .st-list li {
+    font-size: 15px; /* Set the font size of list items in st-list to 15 pixels */
+  }
+
+  .partnars-cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px; /* Change the grid template columns to one column and adding gap 30px between elements in partnars-cards */
+  }
+
+  .partnars-cards div {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally and vertically in partnars-cards div */
+  }
+
+  .partnars-cards img {
+    width: 250px; /* Set the width of images in partnars-cards to 250 pixels */
+  }
+
+  .g-contents {
+    flex-direction: column; /* Change the flex direction of g-contents to column */
+  }
+
+  .g_left,
+  .g_right {
+    width: 100%; /* Set the width of g_left and g_right to 100% */
+    background: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .g-desc {
+    font-size: 15px; /* Set the font size of g-desc paragraphs to 15 pixels */
+  }
+
+  .stc-heading {
+    font-size: 26px; /* Set the font size of stc-heading */
+  }
+
+  .contact-content {
+    margin-top: 40px; /* Add margin at the top of contact-content */
+    flex-wrap: wrap; /* Enable wrapping of contact-content elements */
+  }
+
+  .cc-left {
+    width: 100%; /* Set the width of cc-left to 100% */
+  }
+
+  .cc-right {
+    width: 100%; /* Set the width of cc-right to 100% */
+  }
+
+  iframe {
+    height: 200px !important; /* Set the height of iframes to 200 pixels with !important */
+  }
+
+  .additional-info {
+    margin-top: 30px; /* Add margin at the top of additional-info */
+  }
+
+  .additonal-box p {
+    font-size: 15px; /* Set the font size of paragraphs in additonal-box to 15 pixels */
+  }
+
+  .name-fields {
+    flex-wrap: wrap;
+    gap: 0; /* Enable wrapping of name-fields elements and remove gap */
+  }
+
+  .form-select label {
+    font-size: 15px; /* Set the font size of labels in form-select to 15 pixels */
+  }
+
+  footer {
+    padding: 35px 0; /* Adjust padding of the footer */
+  }
+
+  .f-informations {
+    width: 100%; /* Set the width of footer-links to 100% */
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: start;
+  }
+
+  .news_letter {
+    margin-top: 20px; /* Add margin at the top of news_letter */
+  }
+
+  .news_letter p {
+    font-size: 20px; /* Set the font size of paragraphs in news_letter to 20 pixels */
+  }
+
+  .form {
+    width: 100%; /* Set the width of the form to 100% */
+  }
+
+  .form input {
+    width: 65%; /* Set the width of inputs in the form to 65% */
+  }
+
+  .form button {
+    width: 35%; /* Set the width of buttons in the form to 35% */
+  }
+
+  .copyright p {
+    font-size: 12px; /* Set the font size of paragraphs in the copyright section to 12 pixels */
+  }
+
+  /* Sidebar Css */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hide the sidebar by default */
+    width: 65%; /* Set the width of the sidebar */
+    height: 100vh; /* Set the height of the sidebar */
+    background-color: #dbb764; /* Set the background color of the sidebar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center align the content in the sidebar */
+    transition: all 0.5s ease-in-out; /* Add transition effect to the sidebar */
+  }
+
+  .sidebar.active {
+    right: 0; /* Show the sidebar by moving it to the right */
+  }
+
+  .sidebar_links li {
+    margin-bottom: 20px; /* Add margin at the bottom of sidebar links */
+    text-align: center; /* Center align the text in sidebar links */
+  }
+
+  .sidebar_links a {
+    transition: all 0.4s ease;
+    position: relative; /* Set styles for sidebar links */
+  }
+
+  .sidebar_links a:hover {
+    color: #fff; /* Change the color of sidebar links on hover */
+  }
+
+  .sidebar_links a::before {
+    content: "";
+    width: 0%;
+    height: 2px; /* Create a horizontal line beneath sidebar links */
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -4px; /* Position the line below the text */
+    transition: width 0.4s ease; /* Add transition effect to the line */
+  }
+
+  .sidebar_links a:hover::before {
+    width: 100%; /* Extend the line to 100% width on hover */
+  }
+
+  .overlay {
+    display: none; /* Hide the overlay by default */
+    width: 100%; /* Set the width of the overlay */
+    height: 100vh; /* Set the height of the overlay */
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.75
+    ); /* Set the background color of the overlay */
+    position: fixed;
+    inset: 0; /* Position the overlay to cover the entire viewport */
+  }
+
+  .overlay.active {
+    display: block; /* Show the overlay */
+  }
+
+  .close {
+    position: absolute;
+    top: 13px;
+    right: 13px; /* Position the close button in the top-right corner */
+    cursor: pointer; /* Set the cursor to pointer for the close button */
+  }
+
+  .close i {
+    font-size: 25px; /* Set the font size of the close button icon */
+  }
+}

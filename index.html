@@ -1,20 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-	</head>
-	<body>
-		<header class="hero-wrapper">
-			<nav class="logo navbar">
-				<a class="a-nav" href="Home"><strong>Home</strong> </a>
-				<a class="a-nav" href="About">About</a>
-				<a class="a-nav" href="Products">Products</a>
-				<a class="a-nav" href="Case Studies ">Case Studies</a>
-				<img src="Hero.jpg" alt="" />
-				<img class="quote" src="assets/Quote-btn.png" alt="Quotation button" />
-			</nav>
-		</header>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon.webp"
+      type="image/x-icon"
+    />
+
+    <title>Solar Tech Solutions</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  
+  <body>
+    <!-- navbar start -->
+    <header>
+      <nav>
+        <div class="container">
+          <!-- left side -->
+          <div>
+            <a href="#">
+              <img src="./assets/Logo.ST .png" alt="site_logo" width="80" />
+            </a>
+          </div>
+
+          <!-- right side -->
+          <div>
+            <ul class="nav-links">
+              <li>
+                <a href="index.html"> Home </a>
+              </li>
+              <li>
+                <a href="#about.html"> About Us </a>
+              </li>
+              <li>
+                <a href="productpage.html"> Products </a>
+              </li>
+              <li>
+                <a href="#casestudies.html"> Case Studies </a>
+              </li>
+              <!-- <li>
+                <a href="./contact.html"> Contact </a>
+              </li> -->
+            </ul>
+
+            <!-- hamburger menu -->
+            <div class="hamburger">
+              <i class="fa-solid fa-bars-staggered"> </i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- navbar end -->
+
+    <!-- Mobile Sidebar Content-->
+    <div>
+      <div class="overlay"></div>
+      <!-- Mobile Sidebar -->
+      <div class="sidebar">
+        <!-- Close Icon -->
+
+        <div class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <ul class="sidebar_links">
+          <li>
+            <a href="index.html"> Home </a>
+          </li>
+          <li>
+            <a href="#about"> About Us </a>
+          </li>
+          <li>
+            <a href="productpage.html"> Products </a>
+          </li>
+          <li>
+            <a href="#casestudies"> Case Studies </a>
+          </li>
+          <li>
+            <a href="#blog"> Blogs </a>
+          </li>
+          <!-- <li>
+            <a href="./contact.html"> Contact </a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- Banner Section Start -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <!-- <h1>Solar Tech <span>Solutions</span></h1> -->
+
+        <a href="#video">
+          <a href="quotation.html"></a><img id="hero-Quote-Btn" src="assets/Quote-btn.png" alt=""></a>
+         
+          <!-- <button class="hero-Quote-Btn">Get Your <br> Quote Today</button> -->
+        </a>
+      </div>
+    </section>
+    <!-- Banner Section End -->
+
+    <section id="blog" class="solar-energy">
+      <img src="./assets/why-solar.png" alt="solar-banner" />
+
+      <!-- <img src="./assets/Solar Banner.png" alt="solar-banner" /> -->
+    </section>
+
+   
+
+    <!-- Video Section Start -->
+    <section id="video" class="video-section">
+      <!-- Title -->
+      <div class="container">
+        <h2 class="video-title"> How Do Solar Panels Work?</h2>
+      </div>
+
+      <video playsinline controls>
+        <source src="./assets/background-video.mp4" type="video/mp4" />
+      </video>
+    </section>
+    <!-- Video Section End -->
+
+    <!-- Services Section Start -->
+    <section id="about" class="services-tech">
+      <div class="container">
+        <div class="services-contents">
+          <!-- left side -->
+          <div class="services_left">
+            <div class="services_content">
+              <h1 class="services-heading">Solar Tech Services</h1>
+              <p>
+                Our company prides itself in being one of the of the leading
+                domestic and commercial providers and installers. <br>
+                We offer a range solar equipment to meet your needs.
+              </p>
+
+              <ul class="services-list">
+                <li>Battery Storage</li>
+                <li>Domestic Solar</li>
+                <li>Commercial Solar</li>
+                <li>Delivery & Collection</li>
+                <li>Panel & Battery Recycling</li>
+                <li>Installation, Repair & Maintenance</li>
+              </ul>
+            </div>
+          </div>
+          <!-- right side -->
+          <div class="services_right">
+            <div class="services_content">
+              <img src="./assets/Best.png" alt="best_awards"  >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Solar tech services section end -->
+
+    <!-- Our Partners Start -->
+    <section class="partners">
+      <div class="container">
+        <h2 class="partners-heading">Partners & Sponsors</h2>
+
+        <div class="partners-cards">
+          <div>
+            <img src="./assets/Green stamp.png" alt="partner1" />
+          </div>
+          <div>
+            <img src="./assets/Clean-energy.png" alt="partner1" />
+          </div>
+          <div>
+            <img src="./assets/Eco-ftech.png" alt="partner1" />
+          </div>
+          <div>
+            <img src="./assets/saver.png" alt="partner1" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Partners End -->
+
+
+    <!-- <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="Assets/solar-works.png">
+        </div>
+        <div class="flip-box-back">
+          <p>Invest In Renewable Energy Today</p>
+          <img src="Assets/solar-energy.png" alt="Photo of green field with solar panels and wind turbines">
+
+          <p>& Save On Your Energy Bills</p>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- guarantee section start -->
+    <section id="guarantee" class="guarantee">
+      <div class="container">
+        <div class="guarantee-content">
+          <!-- right side -->
+          <div class="guarantee_right">
+            <div class="guarantee_content">
+              <img src="./assets/solarEnergy.png" alt="best_awards" />
+            </div>
+          </div>
+
+          <!-- Guarantee Section Start -->
+          <!-- left side -->
+          <div class="guarantee_left">
+            <div class="guarantee_content">
+              <h1 class="guarantee-heading">Our Guarantee</h1>
+              <p class="guarantee-desc">
+                Our solar panels are amongst the best on the market. Our
+                technology has undergone many rigorous tests to ensure we supply
+                our customers with only the best solar panels and batteries.
+              </p>
+
+              <p class="guarantee-desc">
+                We are confident in the effectiveness of our products, which is
+                why we offer a 60 day money back guarantee you are not
+                satisfied.
+              </p>
+
+              <button class="guarantee-btn">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Guarantee Section End -->
+
+    <!-- Solar Energy Start -->
+    <section id="blog" class="solar-energy">
+      <img src="./assets/why-solar.png" alt="solar-banner" />
+
+      <!-- <img src="./assets/Solar Banner.png" alt="solar-banner" /> -->
+    </section>
+    <!-- Solar Energy End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <div class="f_content">
+          <!-- logo -->
+          <div class="f_logo">
+            <img src="./assets/Logo.ST .png" alt="site_logo" width="120" />
+          </div>
+
+          <!-- News letter -->
+          <div class="news_letter">
+            <p>Sign Up To Our Newsletter</p>
+
+            <div class="form">
+              <input type="email" placeholder="Enter your email here" />
+              <button>Subscribe Now</button>
+            </div>
+          </div>
+
+          <!-- Footer Columns -->
+          <div class="first-col-information">
+            <!-- First Column -->
+            <div>
+              <h3 class="fi_title">Company Info</h3>
+
+              <div class="fi_content">
+                <p>SolarTechSolutions.com</p><br>
+
+                <p>
+                  <strong>Call us on:</strong><br>
+                  0800 375 5335</p><br>
+
+                <p>
+                  <strong>email:</strong>
+                  enquiry@solartechsol.com</p>
+                  <br>
+
+                <p>
+                  <strong>Location</strong><br><br>
+                  
+                  5 Solareus Street <br>
+                  Selbourne Park <br>
+                  Central London <br>
+                  EC2 9LJ
+                </p>
+              </div>
+            </div>
+
+            <!-- Second Col -->
+            <div>
+              <h3 class="fi_title">Site Links</h3>
+
+              <div class="fi_content">
+                <ul class="footer-links">
+                  <li>
+                    <a href="#hero"> Home </a>
+                  </li>
+                  <li>
+                    <a href="#about"> About Us </a>
+                  </li>
+                  <li>
+                    <a href="#products"> Products </a>
+                  </li>
+                  <li>
+                    <a href="#caseStudy"> Case Studies </a>
+                  </li>
+                  <li>
+                    <a href="#blog"> Blogs </a>
+                  </li>
+                  <!-- <li>
+                    <a href="./contact.html"> Contact </a>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+
+            <!-- Second Col -->
+            <div>
+              <h3 class="fi_title">Additional Links</h3>
+
+              <div class="fi_content">
+                <ul class="footer-links">
+                  <li>
+                    <a href="faq.html"> FAQs </a>
+                  </li>
+                  <li>
+                    <a href="#contact.html"> Contact Us </a>
+                  </li>
+                  <li>
+                    <a href="#"> Returns Policy </a>
+                  </li>
+                  <li>
+                    <a href="#"> Terms & Conditions </a>
+                  </li>
+                  <li>
+                    <a href="#"> Sustainability Mission </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <!-- Social Links -->
+          <div class="social_links">
+            <p class="foot-p">Get In Touch</p>
+            <a href="https://www.facebook.com">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+
+          <hr style="border-color: black" />
+
+          <!-- copyright -->
+          <div class="copyright">
+            <p>&copy;2023, All rights reserved by Solar Tech Solutions</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  </body>
+
+  <!-- js linkup -->
+  <script src="./js/app.js"></script>
 </html>
