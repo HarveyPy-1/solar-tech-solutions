@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Solar Panel Quotation</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>Please enter your <span id="colored-text">details</span></h1>
+			<div class="choose">
+				<form id="addressForm">
+					<label for="postcode">Postcode:</label>
+					<div class="find-address">
+						<input type="text" id="postcode" name="postcode" />
+						<button type="button" onclick="findAddress()">Find address</button>
+					</div>
+
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" />
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" />
+
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" />
+
+					<label for="panels">Number of Panels:</label>
+					<input type="number" id="panels" required />
+
+					<input type="submit" value="Submit" />
+				</form>
+				<div id="quotationResult" class="quotation" style="display: none">
+					<h2>Thank you for your interest!</h2>
+					<p>
+						We will contact you soon with a personalized quotation for solar
+						panels installation in your location.
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<script src="script.js"></script>
+	</body>
+</html>
