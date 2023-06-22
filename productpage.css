@@ -172,14 +172,13 @@ nav .container2 {
   gap: 40px;
   list-style: none;
 }
-
 .nav-links a {
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 700;
   transition: all 0.4s ease;
   position: relative;
   padding-right: 5px;
-  color: rgb(82, 74, 4); /* Text color for navigation links */
+  color: rgb(243, 160, 6); /* Text color for navigation links */
 }
 
 .nav-links a::before {
