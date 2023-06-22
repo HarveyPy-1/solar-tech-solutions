@@ -360,3 +360,7 @@ footer {
   .copyright p {
     font-size: 15px;
   }
+
+  .social_links a {
+    text-decoration: none;
+  }
