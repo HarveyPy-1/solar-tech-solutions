@@ -181,36 +181,35 @@ nav {
   }
   
   .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    list-style: none;
-  }
-  
-  .nav-links a {
-    font-size: 15px;
-    font-weight: 700;
-    transition: all 0.4s ease;
-    position: relative;
-    padding-right: 5px;
-    color: rgb(82, 74, 4); /* Text color for navigation links */
-  }
-  
-  .nav-links a::before {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background-color: #fbae3e; /* Underline color for navigation links */
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    transition: width 0.4s ease;
-  }
-  
-  .nav-links a:hover::before {
-    width: 100%; /* Increase the underline width on hover */
-  }
-  
-  .nav-links a:hover {
-    color: #dbb764; /* Text color for navigation links on hover */
-  }
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 19px;
+  font-weight: 700;
+  transition: all 0.4s ease;
+  position: relative;
+  padding-right: 5px;
+  color: rgb(243, 160, 6); /* Text color for navigation links */
+}
+
+.nav-links a::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #fbae3e; /* Underline color for navigation links */
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.4s ease;
+}
+
+.nav-links a:hover::before {
+  width: 100%; /* Increase the underline width on hover */
+}
+
+.nav-links a:hover {
+  color: #dbb764; /* Text color for navigation links on hover */
+}
