@@ -1,17 +1,22 @@
 /* Google font */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+/* @import url("https://fonts.google.com/specimen/Roboto"); */
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url("https://fonts.google.com/specimen/Roboto");
+  
+}
 /* Reset Default CSS */
 html {
   scroll-behavior: smooth; /* Smooth scrolling behavior */
   -webkit-tap-highlight-color: transparent; /* Transparent tap highlight color */
+  
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "roboto", sans-serif; /* Set font family */
+  font-family: 'Roboto', sans-serif; /* Set font family */
 }
 
 h1, h2, h3, h4, h5, h6, a, p, span, ul, p {
@@ -42,22 +47,18 @@ ul {
 }
 
 #hero-Quote-Btn {
-  /* background-color: rgb(231, 160, 30); */
- 
-  color: white; /* Text color for button */
-  border: none;
-  outline: none;
-  margin-bottom: -329px;
+  margin-bottom: -229px;
   margin-left: 100px;
   padding: 16px 30px;
   cursor: pointer;
-  transition: all 0.4s ease-in-out; /* Transition effect */
+  transition: all 0.4s ease-in-out; 
   font-size: 30px;
   width: 200px;
+ 
 }
 
 #hero-Quote-Btn:hover {
-  transform: translateY(5px); /* Move button 20px to the right on hover */
+  transform: translateY(5px); 
 }
 
 footer img,
@@ -73,6 +74,9 @@ nav {
   width: 100%;
   top: 0;
   right: 0;
+  /* border: solid 0px red; */
+  background-color:  #bbe2c6;
+  opacity: 0.7;
 }
 
 nav .container {
@@ -92,12 +96,12 @@ nav .container {
 }
 
 .nav-links a {
-  font-size: 15px;
-  font-weight: 900;
+  font-size: 19px;
+  font-weight: 700;
   transition: all 0.4s ease;
   position: relative;
   padding-right: 5px;
-  color:#4d8000;; /* Text color for navigation links */
+  color: rgb(243, 160, 6); /* Text color for navigation links */
 }
 
 .nav-links a::before {
@@ -116,7 +120,7 @@ nav .container {
 }
 
 .nav-links a:hover {
-  color: #f99406 /* Text color for navigation links on hover */
+  color: #dbb764; /* Text color for navigation links on hover */
 }
 
 /* hero section */
@@ -131,7 +135,6 @@ nav .container {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,34 +158,43 @@ nav .container {
 /* Video Section Start */
 
 .video-section {
-  background-color: #f9f9fa;
+  background-color: orange;
   padding-top: 50px;
-}
-
-video {
-  width: 100%;
 }
 
 .video-title {
   text-align: center;
   font-size: 40px;
-  color: orange; /* Text color for section title */
+  color: white; /* Text color for section title */
   margin-bottom: 50px;
+  border: solid 40px orange;
+  margin-top: -50px;
+
 }
+
+video {
+  width: 90%;
+  margin-left: 3rem;
+  margin-top: -80px;
+  padding-bottom: 50px;
+
+}
+
+
 
 
 
 /* Solar Tech Services Section */
 .services-tech {
-  margin-left: 0px;
+  
   padding: 50px 0;
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 .services-heading {
-  color: orange; /* Text color for solar tech services heading */
+  color: rgb(116, 165, 42); /* Text color for solar tech services heading */
   font-size: 35px;
-  margin-left: 60px;
+  /* margin-top: -75px; */
   margin-bottom: 30px;
 }
 
@@ -190,21 +202,22 @@ video {
   display: flex;
   justify-content: space-between;
   gap: 50px;
-  color: white;
+  color: rgb(213, 143, 12);
   font-size: 17px;
+  
   
 
 }
 .services-list {
   list-style-type: disc;
   padding-left: 20px;
-  margin-top: 50px;
-  color: white;
+  margin-top: 30px;
+  color: rgb(213, 143, 12);
 }
 .services_left
  {
   width: 50%;
-  background-color: lightblue;
+  background-color: rgb(199, 228, 237);
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -222,7 +235,7 @@ video {
 }
 .services_right {
   width: 50%;
-  background-color: whitesmoke;
+  background-color: wheat;
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -258,6 +271,7 @@ width: 500px;} */
 }
 
 .partners-cards div {
+  border-radius: 20px;
   background-color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -265,7 +279,7 @@ width: 500px;} */
 
 
 
-/* Guarantee Start*/
+/* Gurarantee Start*/
 .guarantee {
   background-color: #f9f9fa;
   padding: 50px 0;
@@ -273,7 +287,7 @@ width: 500px;} */
 .guarantee-heading {
   color: orange; /* Text color for solar tech services heading */
   font-size: 35px;
-  margin-left: 100px;
+  margin-left: 0px;
   margin-bottom: 30px;
 }
 .guarantee-btn{
@@ -282,11 +296,10 @@ width: 500px;} */
   border: double;
   border-radius: 40px;
   outline:none;
-  margin-left: 120px;
+  margin-left: 0px;
   
   padding: 10px ;
   font-size: 6px;
-  /* font-family: "Inter", sans-serif; */
   /* border-radius: 6px; */
   cursor: pointer;
   transition: all 0.4s ease-in-out; /* Transition effect */
@@ -309,13 +322,13 @@ width: 500px;} */
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.guarantee-desc {
+.guarantee-description {
   font-size: 18px;
   line-height: 160%;
   display: block;
 }
 
-.guarantee-desc:nth-child(2) {
+.guarantee-description:nth-child(2) {
   margin: 30px 0;
 }
 
@@ -323,27 +336,38 @@ width: 500px;} */
   margin-top: 40px;
 }
 
+.guarantee_content img{
+ block-size: fit-content;
+ max-width: 100%;
+ margin: auto;
+ max-height:100%;
+
+}
 /* Guarantee Section End */
 
 /* Solar Energy */
 
-.solar-energy img {
-  width: 100%;
+.save-energy img {
+  width: 95%;
+  margin-left: 28px;
+  margin-top: -10px;
+  border-radius: 70px;
+  
+  
+  
+
 }
 
 /* Footer Start*/
 footer {
   background-color: #e0f7ee; /* Background color for footer */
-  margin-top: -10px;
   padding: 50px 0;
 }
-
-.f_logo {
+.footer_logo {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .first-col-information {
   width: 70%;
   margin: 0 auto;
@@ -354,9 +378,8 @@ footer {
   gap: 50px;
   color: green;
 }
-
 .fi_title {
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
   text-decoration: none;
   color: orange;
 }
@@ -364,7 +387,6 @@ footer {
 .fi_content p {
   margin-bottom: 10px;
 }
-
 .footer-links {
   width: 100%;
   margin: 0 auto;
@@ -373,26 +395,22 @@ footer {
   flex-direction: column;
   gap: 10px;
 }
-
 .foot-p{
   position: relative;
   top: -50px;
   left: 150px;
   color: green;
   font-weight: bold;
-  
 }
 .news_letter {
   margin-top: 50px;
   text-align: center;
 }
-
 .news_letter p {
   font-size: 24px;
   font-weight: 600;
   color: orange;
 }
-
 .form {
   width: 30%;
   margin-left: auto;
@@ -403,33 +421,31 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
-
 .form input {
   width: 70%;
-  padding: 18px;
+  padding: 16px;
   font-size: 13px;
   border: none;
   outline: none;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-
-.form button {
-  width: 30%;
+.subscribe-btn {
+  width: 35%;
+  height: 47px;
   background-color: orange;
   color: white;
   border: none;
   border-left: 1px solid #dbb764;
   outline: none;
-  padding: 16px;
-  font-size: 13px;
+  padding: 16px 0;
+  font-size: 17px;
   cursor: pointer;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   font-weight: bold;
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
-
 .social_links {
   display: flex;
   align-items: center;
@@ -438,7 +454,6 @@ footer {
   margin-bottom: 30px;
   margin-left: -105px;
 }
-
 .social_links i {
   color: #fff;
   font-size: 16x;
@@ -450,15 +465,20 @@ footer {
   justify-content: center;
   border-radius: 100%;
 }
-
 .copyright {
   padding-top: 18px;
   text-align: center;
 }
-
 .copyright p {
   font-size: 15px;
 }
+/* Footer END */
+
+
+
+
+
+
 
 /* 
 ===================================
@@ -466,20 +486,20 @@ Contact Page CSS
 ===================================
 */
 
-.hero h1 {
+/* .hero h1 {
   font-size: 80px;
   color: green; 
   margin-bottom: 50px;
-}
+} */
 
-.hero h1 span {
+/* .hero h1 span {
   color: orange;          
   text-decoration: underline;
   text-underline-offset: 10px;
-}
+} */
 #contact {
   padding: 60px 0 100px 0;
-  background-color: #f9f9fa;
+  /* background-color: rgb(234, 224, 206);  */
 }
 
 .contact-content {
@@ -488,7 +508,9 @@ Contact Page CSS
   gap: 60px;
   margin-top: 60px;
 }
-
+.contact-title{
+  margin-top: 150px;
+}
 .cc-left {
   width: 40%;
 }
@@ -501,20 +523,20 @@ Contact Page CSS
   border-radius: 12px;
 }
 
-.additional-info {
+.company-info {
   margin-top: 50px;
 }
 
-.additional-box {
+.company-info-box {
   margin-bottom: 20px;
 }
 
-.additional-box p {
+.company-info-box p {
   font-size: 17px;
 }
 
-.additional-box p span {
-  color: #dbb764; /* Text color for highlighted span in additional info box */
+.company-info-box p span {
+  color: orange; /* Text color for highlighted span in additional info box */
   font-weight: 500;
 }
 
@@ -524,6 +546,7 @@ Contact Page CSS
   gap: 6px;
   margin-bottom: 20px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .name-fields {
@@ -558,11 +581,25 @@ Contact Page CSS
 }
 
 .form-select {
-  display: flex;
+  /* display: flex; */
+  line-height: 25px;
   flex-wrap: wrap;
   gap: 10px 30px;
 }
 
 .form-btn {
-  margin-top: 50px;
+  margin-top: 35px;
+  
+}
+.submit-btn{
+  width: 13rem;
+  height: 3.5rem;
+  color: white;
+  margin-left: 29rem;
+  border: double green; 
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: orange;
+
 }

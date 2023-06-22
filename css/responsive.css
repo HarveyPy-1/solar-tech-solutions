@@ -7,7 +7,7 @@
 
 /* For Tablet */
 @media screen and (max-width: 1024px) {
-  .banner h1 {
+  .hero h1 {
     font-size: 70px; /* Increase the font size of h1 in the banner */
   }
 
@@ -20,19 +20,22 @@
     width: 100%; /* Make all images stretch to 100% width */
   }
 
-  .partnars-cards {
+  .partners-cards {
     grid-template-columns: repeat(
       2,
       1fr
     ); /* Create a grid with two equal-width columns for partnars-cards */
   }
 
-  .partnars-cards div {
+  .partners-cards div {
     display: flex;
     align-items: center;
     justify-content: center; /* Center the content horizontally and vertically in partnars-cards div */
   }
 
+  footer {
+    width:100%;
+  }
   .footer-links {
     width: 100%; /* Set the width of footer-links to 80% */
   }
@@ -74,7 +77,7 @@
     cursor: pointer; /* Set styles for the hamburger icon */
   }
 
-  .banner h1 {
+  .hero h1 {
     font-size: 45px; /* Decrease the font size of h1 in the banner */
     margin-bottom: 30px; /* Add margin at the bottom of h1 in the banner */
   }
@@ -84,7 +87,7 @@
     font-size: 13px; /* Adjust padding and font size of buttons */
   }
 
-  .banner {
+  .hero {
     height: 60svh; /* Set the height of the banner */
   }
 
@@ -93,78 +96,78 @@
     margin-bottom: 30px; /* Add margin at the bottom of section titles */
   }
 
-  .st-contents {
+  .services-content {
     flex-direction: column-reverse; /* Reverse the column order in st-contents */
   }
 
-  .stc_content {
+  .services_content {
     background-color: #fff;
     padding: 30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
 
-  .stc_left,
-  .stc_right {
+  .services_left,
+  .services_right {
     width: 100%; /* Set the width of stc_left and stc_right to 100% */
     background: none;
     box-shadow: none;
     padding: 0;
   }
 
-  .stc_right {
+  .services_right {
     display: flex;
     align-items: center;
     justify-content: center; /* Center the content horizontally and vertically in stc_right */
   }
 
-  .stc_content img {
+  .services_content img {
     width: 100%; /* Set the width of images in stc_right to 350 pixels */
   }
 
-  .stc_left p {
+  .services_left p {
     font-size: 15px; /* Set the font size of paragraphs in stc_left to 15 pixels */
   }
 
-  .st-list {
+  .services-list {
     margin-top: 30px; /* Add margin at the top of st-list */
   }
 
-  .st-list li {
+  .services-list li {
     font-size: 15px; /* Set the font size of list items in st-list to 15 pixels */
   }
 
-  .partnars-cards {
+  .partners-cards {
     grid-template-columns: repeat(1, 1fr);
     gap: 30px; /* Change the grid template columns to one column and adding gap 30px between elements in partnars-cards */
   }
 
-  .partnars-cards div {
+  .partners-cards div {
     display: flex;
     align-items: center;
     justify-content: center; /* Center the content horizontally and vertically in partnars-cards div */
   }
 
-  .partnars-cards img {
+  .partners-cards img {
     width: 250px; /* Set the width of images in partnars-cards to 250 pixels */
   }
 
-  .g-contents {
+  .guarantee-contents {
     flex-direction: column; /* Change the flex direction of g-contents to column */
   }
 
-  .g_left,
-  .g_right {
+  .guarantee_left,
+  .guarantee_right {
     width: 100%; /* Set the width of g_left and g_right to 100% */
     background: none;
     box-shadow: none;
     padding: 0;
   }
 
-  .g-desc {
+  .guarantee-desc {
     font-size: 15px; /* Set the font size of g-desc paragraphs to 15 pixels */
   }
 
-  .stc-heading {
+  .services-heading {
     font-size: 26px; /* Set the font size of stc-heading */
   }
 
@@ -189,7 +192,7 @@
     margin-top: 30px; /* Add margin at the top of additional-info */
   }
 
-  .additonal-box p {
+  .additional-box p {
     font-size: 15px; /* Set the font size of paragraphs in additonal-box to 15 pixels */
   }
 
@@ -206,7 +209,7 @@
     padding: 35px 0; /* Adjust padding of the footer */
   }
 
-  .f-informations {
+  .f-information {
     width: 100%; /* Set the width of footer-links to 100% */
     grid-template-columns: repeat(1, 1fr);
     justify-items: start;
@@ -288,12 +291,7 @@
     display: none; /* Hide the overlay by default */
     width: 100%; /* Set the width of the overlay */
     height: 100vh; /* Set the height of the overlay */
-    background-color: rgba(
-      0,
-      0,
-      0,
-      0.75
-    ); /* Set the background color of the overlay */
+    background-color: rgba(0,0,0,0.75); /* Set the background color of the overlay */
     position: fixed;
     inset: 0; /* Position the overlay to cover the entire viewport */
   }
