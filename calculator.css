@@ -1,0 +1,215 @@
+/* Google font */
+/* @import url("https://fonts.google.com/specimen/Roboto"); */
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url("https://fonts.google.com/specimen/Roboto");
+  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+  }
+  
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#solarSavingsCalculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background-color: #2ecc71;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgb(255, 174, 0);
+    margin-top: 140px;
+    font-family: Roboto, sans-serif;
+    
+}
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    width: 200px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-left: 1px solid #dbb764;
+    outline: none;
+    padding: 16px;
+    font-size: 13px;
+    cursor: pointer;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  footer {
+    background-color: #bbe2c6;
+    padding: 50px 0;
+  }
+  
+  .center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .f_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: green;
+  }
+  
+  .first-col-information {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+  
+  .fi_title {
+    margin-bottom: 20px;
+    color: orange;
+    text-decoration: none;
+  }
+  
+  .social_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    margin-left: -105px;
+  }
+  .social_links i {
+    color: #fff;
+    font-size: 16x;
+    background-color: orange;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+  }
+  
+  .foot-p {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .form input {
+    flex: 1;
+    width: 70%;
+    padding: 18px;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .form button {
+    width: 200px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-left: 1px solid #dbb764;
+    outline: none;
+    padding: 16px;
+    font-size: 13px;
+    cursor: pointer;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /*  Navigation Bar */
+
+nav {
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: #bbe2c6;;
+  }
+  
+  nav .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hamburger, .sidebar, .overlay {
+    display: none;
+  }
+  
+  .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 19px;
+  font-weight: 700;
+  transition: all 0.4s ease;
+  position: relative;
+  padding-right: 5px;
+  color: rgb(243, 160, 6); /* Text color for navigation links */
+}
+
+.nav-links a::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #fbae3e; /* Underline color for navigation links */
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.4s ease;
+}
+
+.nav-links a:hover::before {
+  width: 100%; /* Increase the underline width on hover */
+}
+
+.nav-links a:hover {
+  color: #dbb764; /* Text color for navigation links on hover */
+}
