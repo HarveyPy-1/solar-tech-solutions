@@ -1,0 +1,107 @@
+#contact {
+    padding: 60px 0 100px 0;
+    /* background-color: rgb(234, 224, 206);  */
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 60px;
+  }
+  .contact-title{
+    margin-top: 150px;
+  }
+  .cc-left {
+    width: 40%;
+  }
+  
+  .cc-right {
+    width: 60%;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px;
+    border-radius: 12px;
+  }
+  
+  .company-info {
+    margin-top: 50px;
+  }
+  
+  .company-info-box {
+    margin-bottom: 20px;
+  }
+  
+  .company-info-box p {
+    font-size: 17px;
+  }
+  
+  .company-info-box p span {
+    color: orange; /* Text color for highlighted span in additional info box */
+    font-weight: 500;
+  }
+  
+  .input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .name-fields {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .input-box label {
+    font-size: 14px;
+  }
+  
+  .input-box input {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
+    border-radius: 4px;
+  }
+  
+  .input-box textarea {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
+    border-radius: 4px;
+    resize: none;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+  }
+  
+  .form-select {
+    /* display: flex; */
+    line-height: 25px;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+  }
+  
+  .form-btn {
+    margin-top: 35px;
+    
+  }
+  .submit-btn{
+    width: 13rem;
+    height: 3.5rem;
+    color: white;
+    margin-left: 29rem;
+    border: double green; 
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: orange;
+  
+  }
+  
